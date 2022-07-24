@@ -6,6 +6,21 @@ module.exports = {
       fontFamily: {
         sans: "'Roboto', sans-serif",
       },
+      keyframes: {
+        slideDown: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-20px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+      },
+      animation: {
+        "slideDown-item": "slideDown .2s linear",
+      },
       colors: {
         green: {
           300: "#00B37E",
